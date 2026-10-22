@@ -4,10 +4,20 @@ A community modification of Open PS2 Loader focused on improving the organizatio
 
 ## Features
 
-- **JUMP page:** A dedicated section for PlayStation 1 game shortcuts.
-- **Smart APPS filter:** Switch between regular applications and PS1 shortcuts.
+- **JUMP page:** Organizes PlayStation 1 game shortcuts by source:
+  - **BDM:** Devices managed through BDM, including USB and MX4SIO.
+  - **HDD:** The PS2 internal hard drive.
+  - **NETWORK:** PS1 shortcuts available through SMB from a shared PC folder.
+- **Smart APPS filter:** Press **L3** to switch between regular applications and recognized PS1 shortcuts.
+  - **L3 off:** Shows regular applications and hides recognized PS1 shortcuts.
+  - **L3 on:** Shows only recognized PS1 shortcuts.
+- **Three recognition criteria:** Both JUMP and the Smart APPS filter recognize PS1 shortcuts using:
+  1. The `XX.` filename prefix.
+  2. The `SB.` filename prefix.
+  3. A PS1 executable ID in the filename, for example `SLUS_123.45.GAME NAME.ELF`.
+- **Important:** A generic `.ELF` file is not automatically classified as a PS1 shortcut; it must match one of the criteria above.
 - **Familiar interface:** Retains the usual Open PS2 Loader look and feel.
-- **Multiple storage options:** Tested with several storage devices and access methods.
+- **Multiple storage options:** Organizes shortcuts from different storage devices and network sources.
 
 ## Tested Compatibility
 

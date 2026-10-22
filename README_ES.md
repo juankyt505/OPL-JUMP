@@ -4,10 +4,20 @@ Una modificación comunitaria de Open PS2 Loader enfocada en mejorar la organiza
 
 ## Características
 
-- **Página JUMP:** espacio dedicado a los accesos directos de juegos de PlayStation 1.
-- **Filtro inteligente en APPS:** permite alternar entre las aplicaciones habituales y los accesos directos de PS1.
+- **Página JUMP:** organiza los accesos directos de juegos de PlayStation 1 por origen:
+  - **BDM:** dispositivos gestionados por BDM, como USB y MX4SIO.
+  - **HDD:** disco duro interno de PS2.
+  - **RED:** accesos directos disponibles mediante SMB desde una carpeta compartida del PC.
+- **Filtro inteligente en APPS:** utiliza el botón **L3** para alternar entre las aplicaciones habituales y los accesos directos reconocidos de PS1.
+  - **L3 desactivado:** muestra las aplicaciones habituales y oculta los accesos directos de PS1 reconocidos.
+  - **L3 activado:** muestra exclusivamente los accesos directos de PS1 reconocidos.
+- **Tres criterios de reconocimiento:** JUMP y el filtro inteligente identifican los accesos directos de PS1 mediante:
+  1. El prefijo `XX.` en el nombre del archivo.
+  2. El prefijo `SB.` en el nombre del archivo.
+  3. Un identificador de ejecutable de PS1 en el nombre, por ejemplo `SLUS_123.45.NOMBRE DEL JUEGO.ELF`.
+- **Importante:** un archivo `.ELF` genérico no se considera automáticamente un acceso directo de PS1; su clasificación depende de los criterios anteriores.
 - **Interfaz familiar:** conserva el estilo habitual de Open PS2 Loader.
-- **Múltiples dispositivos:** compatibilidad comprobada con distintos métodos de almacenamiento y acceso.
+- **Múltiples dispositivos:** permite organizar accesos directos procedentes de distintas fuentes de almacenamiento y red.
 
 ## Compatibilidad probada
 
