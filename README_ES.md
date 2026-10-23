@@ -2,6 +2,21 @@
 
 Una modificación comunitaria de Open PS2 Loader enfocada en mejorar la organización del apartado **APPS de OPL**, mostrando de forma inteligente las aplicaciones habituales y los accesos directos de juegos de PlayStation 1 mediante el emulador **POPStarter**, conservando la interfaz original de OPL.
 
+## Guía rápida
+
+### JUMP — Accesos directos de PlayStation 1
+- Pulsa **X** para ejecutar el acceso directo seleccionado.
+- Pulsa **Triángulo** para actualizar la lista.
+- Pulsa **START** para regresar.
+
+### Filtro inteligente de APPS
+- Dentro de APPS, pulsa **L3** para alternar entre las aplicaciones habituales y los accesos directos reconocidos de PS1.
+- **L3 desactivado:** muestra las aplicaciones habituales y oculta los accesos directos de PS1 reconocidos.
+- **L3 activado:** muestra exclusivamente los accesos directos de PS1 reconocidos.
+
+### Reconocimiento de accesos directos
+Se reconocen mediante el prefijo `XX.`, el prefijo `SB.` o un identificador de ejecutable de PS1 en el nombre, por ejemplo `SLUS_123.45.NOMBRE DEL JUEGO.ELF`. Los archivos `.ELF` genéricos no se reconocen automáticamente como accesos directos de PS1.
+
 ## Características
 
 - **Página JUMP:** organiza los accesos directos de juegos de PlayStation 1 por origen:

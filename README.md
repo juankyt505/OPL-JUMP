@@ -2,6 +2,21 @@
 
 A community modification of Open PS2 Loader focused on improving the organization of the **APPS** section. It intelligently separates regular applications from PlayStation 1 game shortcuts that use **POPStarter**, while preserving OPL's familiar interface.
 
+## Quick Start
+
+### JUMP — PlayStation 1 Shortcuts
+- Press **X** to launch the selected shortcut.
+- Press **Triangle** to refresh the list.
+- Press **START** to return.
+
+### Smart APPS Filter
+- Press **L3** in APPS to switch between regular applications and recognized PS1 shortcuts.
+- **L3 off:** Shows regular applications and hides recognized PS1 shortcuts.
+- **L3 on:** Shows only recognized PS1 shortcuts.
+
+### Shortcut Recognition
+Shortcuts are recognized by the `XX.` filename prefix, the `SB.` prefix, or a PS1 executable ID in the filename, such as `SLUS_123.45.GAME NAME.ELF`. Generic `.ELF` files are not automatically recognized as PS1 shortcuts.
+
 ## Features
 
 - **JUMP page:** Organizes PlayStation 1 game shortcuts by source:
