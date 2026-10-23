@@ -17,6 +17,14 @@ Una modificación comunitaria de Open PS2 Loader enfocada en mejorar la organiza
 ### Reconocimiento de accesos directos
 Se reconocen mediante el prefijo `XX.`, el prefijo `SB.` o un identificador de ejecutable de PS1 en el nombre, por ejemplo `SLUS_123.45.NOMBRE DEL JUEGO.ELF`. Los archivos `.ELF` genéricos no se reconocen automáticamente como accesos directos de PS1.
 
+## Base del proyecto
+
+OPL JUMP — FILTRO INTELIGENTE está basado en Open PS2 Loader (OPL), revisión 2267, commit [`4cc74ba`](https://github.com/ps2homebrew/Open-PS2-Loader/commit/4cc74baabb73be9ca43f817474b321cd70fbcc2d).
+
+El autor seleccionó esta revisión como punto de partida por la estabilidad observada durante sus pruebas habituales de OPL.
+
+El proyecto incorpora modificaciones propias, incluida la página JUMP y el filtro inteligente de APPS. OPL JUMP es una modificación comunitaria, no una versión oficial de OPL.
+
 ## Características
 
 - **Página JUMP:** organiza los accesos directos de juegos de PlayStation 1 por origen:

@@ -17,6 +17,14 @@ A community modification of Open PS2 Loader focused on improving the organizatio
 ### Shortcut Recognition
 Shortcuts are recognized by the `XX.` filename prefix, the `SB.` prefix, or a PS1 executable ID in the filename, such as `SLUS_123.45.GAME NAME.ELF`. Generic `.ELF` files are not automatically recognized as PS1 shortcuts.
 
+## Project Base
+
+OPL JUMP — SMART FILTER is based on Open PS2 Loader (OPL), revision 2267, commit [`4cc74ba`](https://github.com/ps2homebrew/Open-PS2-Loader/commit/4cc74baabb73be9ca43f817474b321cd70fbcc2d).
+
+This revision was selected by the project author as the starting point based on the stability observed during their regular OPL testing.
+
+The project adds its own modifications, including the JUMP page and Smart APPS Filter. OPL JUMP is a community modification, not an official OPL release.
+
 ## Features
 
 - **JUMP page:** Organizes PlayStation 1 game shortcuts by source:
