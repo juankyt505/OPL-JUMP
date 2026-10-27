@@ -1,0 +1,27 @@
+# Respaldos locales: conservar en el equipo, no publicar
+*.bak
+*.backup
+*.backup-*
+*.before*
+*.ps1test.bak
+*antes-*
+*antes_*
+*RESPALDO*.ELF
+*RESPALDO*.elf
+RESPALDOS_README/
+
+# Artefactos generados por la compilación de ee_core
+ee_core/obj/
+ee_core/ee_core.elf
+ee_core/ee_core.map
+
+# Archivos temporales
+*.o
+*.pyc
+__pycache__/
+
+# Respaldos con sufijos de fecha
+*.bak_*
+*.bak-*
+
+*.backup_*
