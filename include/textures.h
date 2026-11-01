@@ -36,7 +36,9 @@ enum INTERNAL_TEXTURE {
     DOWN_ICON,
     L1_ICON,
     L2_ICON,
+    */
     L3_ICON,
+    /*
     R1_ICON,
     R2_ICON,
     R3_ICON, */

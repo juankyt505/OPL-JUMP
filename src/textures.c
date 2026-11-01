@@ -39,7 +39,9 @@ extern void *up_png;
 extern void *down_png;
 extern void *L1_png;
 extern void *L2_png;
+*/
 extern void *L3_png;
+/* currently unused.
 extern void *R1_png;
 extern void *R2_png;
 extern void *R3_png; */
@@ -161,7 +163,9 @@ static texture_t internalDefault[TEXTURES_COUNT] = {
     {DOWN_ICON, "down", &down_png},
     {L1_ICON, "L1", &L1_png},
     {L2_ICON, "L2", &L2_png},
+    */
     {L3_ICON, "L3", &L3_png},
+    /* currently unused.
     {R1_ICON, "R1", &R1_png},
     {R2_ICON, "R2", &R2_png},
     {R3_ICON, "R3", &R3_png}, */

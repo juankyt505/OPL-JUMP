@@ -1374,9 +1374,8 @@ static void thmLoad(const char *themePath)
     for (i = BDM_ICON; i <= START_ICON; i++)
         thmLoadResource(&newT->textures[i], i, themePath, GS_PSM_CT32, newT->useDefault);
 
-    /* Not customizable icons - currently unused.
-    for (i = L1_ICON; i <= R3_ICON; i++)
-        thmLoadResource(&newT->textures[i], i, NULL, GS_PSM_CT32, 1); */
+    // Load L3 icon for bottom menu hints
+thmLoadResource(&newT->textures[L3_ICON], L3_ICON, NULL, GS_PSM_CT32, 1);
 
     if (!themePath)
         for (i = ELF_FORMAT; i <= VMODE_PAL; i++)

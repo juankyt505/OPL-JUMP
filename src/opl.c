@@ -227,6 +227,12 @@ void moduleUpdateMenuInternal(opl_io_module_t *mod, int themeChanged, int langCh
     menuRemoveHints(&mod->menuItem);
 
     menuAddHint(&mod->menuItem, _STR_MENU, START_ICON);
+
+    if (mod->support->mode == APP_MODE)
+        menuAddHint(&mod->menuItem, _STR_SMART_FILTER, L3_ICON);
+
+    if (mod->support->mode != APP_MODE)
+        menuAddHint(&mod->menuItem, _STR_JUMP_PS1, L3_ICON);
     if (!mod->support->enabled)
         menuAddHint(&mod->menuItem, _STR_START_DEVICE, gSelectButton == KEY_CIRCLE ? CIRCLE_ICON : CROSS_ICON);
     else {
